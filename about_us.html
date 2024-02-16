@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/glt7fbs.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('background.png');
+            background-size: cover;
+            padding: 5px; 
+        }
+
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .person img {
+            max-width: 500px; /* Ändern Sie hier die maximale Breite nach Bedarf */
+            width: 100%; /* Stellt sicher, dass das Bild responsiv ist */
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .person h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .person p {
+            text-align: center;
+        }
+
+        /* Klasse für die Anpassung der Bildgröße */
+        .small-image {
+            max-width: 100px; /* Ändern Sie hier die maximale Breite nach Bedarf */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unser Team</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="opening_hours.html">Öffnungszeiten</a></li>
+                <li><a href="about_us.html">Über uns</a></li>
+                <li><a href="special_offer.html">Besonderes</a></li>
+                <li><a href="news.html">Neuigkeiten</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div class="person">
+                <img src="martha.jpg" alt="Person 1">
+                <h3>Martha</h3>
+                <p>Martha ist die gute Seele von KARLs. Mehrere Jahrzehnte war sie Besitzerin einer Kneipe und will sich danach auch nicht von dem trennen, was sie schon immer so liebte: Die Menschen dieser Stadt.</p>
+            </div>
+            <div class="person">
+                <img src="stefanie.jpg" alt="Person 2">
+                <h3>Stefanie</h3>
+                <p>Stefanie ist die Gründerin von KARLs. Sie hatte den Traum, in ihrer Heimatstadt einen Ort zu liefern, der Zuhause und Ankommen bedeuten kann. Natürlich steht Stefanie auch meistens selbst mit Martha bei KARLs im Laden!</p>
+            </div>
+            <div class="person">
+                <img src="imre.jpg" alt="Person 3">
+                <h3>Imre</h3>
+                <p>Imre ist gelernter Kaufmann und der Logistiker bei KARLs. Er bestellt neue Ware, redet mit unsere Partnern und sorgt dafür, dass die Regale immer voll sind!</p>
+            </div>
+            <div class="person">
+                <a class="image-container">
+                <img src="lukas.jpg" alt="KARLs Kiosk für die Nachbarschaft" id="scroll-trigger">
+                <div class="image-overlay">Lukas Wacker, Matr.-Nummer: 2111587</div>
+            </a> 
+                <h3>Lukas</h3>
+                <p>Lukas schmeißt für uns Social Media und hat unter anderem diese Website gebaut. Bei Veranstaltungen packt er gerne mit an!</p>
+            </div>
+            <h2>Dein Weg zu uns:</h2>
+            <a href="maps.html" class="image-container">
+                <img src="weg.jpg" alt="KARLs Kiosk für die Nachbarschaft" id="scroll-trigger">
+                <div class="image-overlay">Ob mit dem Rad, der Bahn oder zu Fuß, wir freuen uns auf dich! Wie du uns findest? Hier klicken!</div>
+                <h2>Deine Meinung ist uns wichtig!</h2>
+            <a href="review.html" class="image-container">
+                <img src="laut.jpg" alt="KARLs Kiosk für die Nachbarschaft" id="scroll-trigger">
+                <div class="image-overlay">Sag uns, was wir besser machen können oder dir bereits gefällt. Wir sind dankbar für jedes Feedback. Dafür: Einfach hier klicken!</div>
+            </a>
+            </a>
+        </main>
+        <footer id="footer">
+            KARLs by 2111587, 2024. Alle Rechte vorbehalten.
+        </footer>
+    </div>
+</body>
+</html>
+

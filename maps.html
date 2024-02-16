@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anfahrt zu KARLs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/glt7fbs.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('background.png');
+            background-size: cover;
+            padding: 5px; 
+        }
+
+        main {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .map {
+            margin: auto;
+            max-width: 800px;
+            padding: 10px; 
+            border: 2px dashed black; 
+            border-radius: 4px;
+            overflow: hidden; 
+        }
+
+        .map img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border: none; 
+        }
+
+        .directions {
+            margin: auto;
+            text-align: left;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .directions h2 {
+            margin-bottom: 10px;
+        }
+
+        .directions ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .directions li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dein Weg zu KARLs</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html">Unser Angebot</a></li>
+                <li><a href="opening_hours.html">Öffnungszeiten</a></li>
+                <li><a href="about_us.html">Über uns</a></li>
+                <li><a href="special_offer.html">Besonderes</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Idyllisch gelegen …</h2>
+            <p>… in der Nähe des Mannheimer Wasserturms liegt KARLs. Komm gerne vorbei!</p>
+            <div class="map">
+                <img src="map.jpg" alt="Karte von KARLs Standort">
+            </div>
+            <div class="directions">
+                <h2>Wähle deine Art zu KARLs zu kommen:</h2>
+                <ul>
+                    <li><a href="https://www.google.com/maps/dir/?api=1&destination=Friedrich-Karl-Straße+7,68165+Mannheim&travelmode=walking">Zu Fuß</a></li>
+                    <li><a href="https://www.google.com/maps/dir/?api=1&destination=Friedrich-Karl-Straße+7,68165+Mannheim&travelmode=bicycling">Mit dem Fahrrad</a></li>
+                    <li><a href="https://www.google.com/maps/dir/?api=1&destination=Friedrich-Karl-Straße+7,68165+Mannheim&travelmode=transit">Mit öffentlichen Verkehrsmitteln</a></li>
+                    <li><a href="https://www.google.com/maps/dir/?api=1&destination=Friedrich-Karl-Straße+7,68165+Mannheim&travelmode=driving">Mit dem Auto</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer id="footer">
+            KARLs by 2111587, 2024. Alle Rechte vorbehalten.
+        </footer>
+    </div>
+</body>
+</html>
+
+
+

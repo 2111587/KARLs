@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellung bei KARLs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/glt7fbs.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+             background-image: url('background.png');
+            background-size: cover;
+            padding: 5px;
+        }
+
+        main {
+            flex-grow: 1; 
+        }
+
+        form {
+            margin: 100px; 
+            text-align: center; 
+            padding: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bestellung bei KARLs</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html">Unser Angebot</a></li>
+                <li><a href="opening_hours.html">Öffnungszeiten</a></li>
+                <li><a href="about_us.html">Über uns</a></li>
+                <li><a href="special_offer.html">Besonderes</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <p>Wichtig: Für jede Sorte Brötchen musst du eine eigene Bestellung abschließen! Bezahlt wird vor Ort.</p>
+            <form action="bestellung.php" method="post">
+                <label for="name">Dein Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Deine E-Mail-Adresse oder Handynummer:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="produkt">Brötchensorte:</label>
+                <select id="produkt" name="produkt" required>
+                    <option value="">Bitte wählen...</option>
+                    <option value="Körnerbrötchen">Körnerbrötchen</option>
+                    <option value="Laugenbrötchen">Laugenbrötchen</option>
+                    <option value="Mohnbrötchen">Mohnbrötchen</option>
+                    <option value="Vollkornbrötchen">Vollkornbrötchen</option>
+                    <option value="Butterbrötchen">Butterbrötchen</option>
+                    <option value="Kaiserbrötchen">Kaiserbrötchen</option>
+                    <!-- Weitere Brötchensorten hier einfügen -->
+                </select>
+                <label for="menge">Menge (pro Stück):</label>
+                <input type="number" id="menge" name="menge" min="1" value="1" required>
+                <button type="submit">Bestellen</button>
+            </form>
+            <a class="image-container">
+                    <img src="brot.jpg" alt="zeitschriften" class="scroll-trigger">
+                    <div class="image-overlay">Morgen schon bei dir?</div>
+                </a>
+        </main>
+        <footer id="footer">
+            KARLs by 2111587, 2024. Alle Rechte vorbehalten.
+        </footer>
+    </div>
+</body>
+</html>

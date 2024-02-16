@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundenrezensionen bei KARLs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/glt7fbs.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+             background-image: url('background.png');
+            background-size: cover;
+            padding: 5px;
+        }
+
+        main {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .reviews {
+            margin: auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            color: #000000;
+        }
+
+        .review {
+            margin-bottom: 20px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .review .name {
+            font-weight: bold;
+        }
+
+        .rating {
+            color: #ffcc00;
+        }
+
+        .form {
+            margin: auto;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .form input[type="number"] {
+            width: 40px;
+        }
+
+        .form button {
+            margin-top: 10px;
+            padding: 5px 20px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form button:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback bei KARLs</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html">Unser Angebot</a></li>
+                <li><a href="opening_hours.html">Öffnungszeiten</a></li>
+                <li><a href="about_us.html">Über uns</a></li>
+                <li><a href="special_offer.html">Besonderes</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <p>Deine Meinung ist uns wichtig, damit wir stetig besser werden können. Lass uns deine Meinung da und schau, was andere von uns denken.</p>
+            <div class="reviews">
+                <div class="review">
+                    <p class="name">Max Mustermann</p>
+                    <p class="rating">★★★★☆</p>
+                    <p>Alles super, nur das Angebot an Wein könnte größer sein.</p>
+                </div>
+                <div class="review">
+                    <p class="name">Erika Musterfrau</p>
+                    <p class="rating">★★★★★</p>
+                    <p>Super Kiosk, tolles Angebot und freundliches Personal!</p>
+                </div>
+            </div>
+            <div class="form">
+                <h2>Sag uns deine Meinung!</h2>
+                <form action="#" method="post">
+                    <label for="name">Dein Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="name">Was du uns sagen willst:</label>
+                <input type="text" id="name" name="name" required>
+                    <label for="rating">Bewertung (1-5 Sterne):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+                    <button type="submit">Absenden</button>
+                </form>
+            </div>
+        </main>
+        <footer id="footer">
+            KARLs by 2111587, 2024. Alle Rechte vorbehalten.
+        </footer>
+    </div>
+</body>
+</html>
